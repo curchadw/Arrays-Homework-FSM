@@ -12,7 +12,7 @@ const food = (item) =>{
   return `My Food Array ---> ${myFavoriteFood}`
 }
 
-//I created a function that checks to see if a third item exist in the array accounts for both exisiting and non exisitng 
+//I created a function that checks to see if a third item exist in the array and returns its intended value. 
 const thirdItem = () =>{
   myFavoriteFood[2] ? console.log(myFavoriteFood[2]) : console.log('There is no third item in collection')
 
