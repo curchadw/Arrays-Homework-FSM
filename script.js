@@ -19,8 +19,8 @@ const thirdItem = () =>{
   return myFavoriteFood[2] || 'Not present'
 }
 
-//Just for kicks this function allows me to change the third item and returns the modified array
+//Just for kicks this function allows me to change the third item and returns the modified array only if the third item exist otherwise there is nothing to change as I purposely designed this function to not modify the third item unless it already exists prior to running thhis function
 const changeThirdItem = (item) =>{
-  myFavoriteFood[2] ? myFavoriteFood[2] = item : ''
+  myFavoriteFood[2] ? myFavoriteFood[2] = item : console.log('Add a third item first since the index is empty')
   return myFavoriteFood
 }
